@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="CodeHim">
+  <title>Shopping Cart</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <!-- Style CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Demo CSS (No need to include it into your project) -->
+  <link rel="stylesheet" href="css/demo.css">
+
+</head>
+
+<body>
+  <header class="intro">
+    <h1>The Candy Centre</h1>
+  </header>
+
+
+  <main>
+    <!-- Start DEMO HTML (Use the following code into your project)-->
+    <div class="cart-modal-overlay">
+      <div class="cart-modal">
+        <i id="close-btn" class="fas fa-times"></i>
+        <h1 class="cart-is-empty">Cart is empty</h1>
+
+        <div class="product-rows">
+        </div>
+        <div class="total">
+          <h1 class="cart-total">TOTAL</h1>
+          <span class="total-price">$0</span>
+          <button class="purchase-btn">PURCHASE</button>
+        </div>
+      </div>
+    </div>
+
+    <!--   end of cart modal -->
+    <div class="cart-btn">
+      <i id="cart" class="fas fa-shopping-cart"></i>
+      <span class="cart-quantity">0</span>
+    </div>
+    <!--  products  -->
+    <h1>Chocolates</h1>
+
+    <div class="items-container">
+      <div class="card-1 card">
+        <img class="product-image" src="./imgs/chocolates/cadburybreakaway.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R160</span>
+      </div>
+      <div class="card-2 card">
+        <img class="product-image" src="./imgs/chocolates/chocobakes.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R</span>
+      </div>
+      <div class="card-3 card">
+        <img class="product-image" src="./imgs/chocolates/fingers.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R50</span>
+      </div>
+      <div class="card-4 card">
+        <img class="product-image" src="./imgs/chocolates/hersheys.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R40</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/chocolates/kitkatdessert.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R45</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/chocolates/kitkatmint.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R145</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/chocolates/kitkattriple.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R60</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/chocolates/marssmash.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R50</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/chocolates/milka.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R80</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/chocolates/milkybar.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R85</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/chocolates/snickers.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R</span>
+      </div>
+
+      <br>
+      <h1>Drinks</h1>
+
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/drinks/arizona.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R60</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/drinks/bang.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R30</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/drinks/fantablue.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R45</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/drinks/fantalemon.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R30</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/drinks/fantamango.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R40</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/drinks/gatorade.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R55</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/drinks/nesquik.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R200</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/drinks/oceanbomb.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R45</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/drinks/sprite.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R30</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/drinks/starbucksespresso.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/drinks/starbucksfrap.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R</span>
+      </div>
+      <h1>Sweets</h1>
+
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/sweets/jellybelly.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R50</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/sweets/Jollyrancher.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R110</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/sweets/mikeandikes.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R85</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/sweets/millions.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R55</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/sweets/sourpatchkids.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R55</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/sweets/starburst.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R50</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/sweets/sweettarts.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R65</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/sweets/trolli.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R45</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/sweets/warheadscubes.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R55</span>
+      </div>
+      <div class="card-5 card">
+        <img class="product-image" src="./imgs/sweets/warheadseggs.jpg" alt="">
+        <button class="add-to-cart">Add to cart</button>
+        <span class="product-price">R50</span>
+      </div>
+    </div>
+    <!-- END EDMO HTML (Happy Coding!)-->
+  </main>
+
+
+  <footer class="credit"> By: Mihlali Gcinisiko & Wazeer Gilbert </a></footer>
+
+  <script src="./js/script.js"></script>
+</body>
+
+</html>

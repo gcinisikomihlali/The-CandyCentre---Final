@@ -1,2 +1,2 @@
-# The-CandyCentre---Final
-the final CandyCentre Code
+# The-Candy-Centre
+Candy Shop
